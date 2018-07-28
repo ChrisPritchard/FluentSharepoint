@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Utilities;
 
-namespace FluentCamlQueries
+namespace FluentSharePoint
 {
     public static class FluentCamlQueries
     {
