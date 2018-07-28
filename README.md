@@ -14,14 +14,16 @@ CAML is a list filtering language for SharePoint 2007/2010. You construct an XML
 
 An example of use:
 
-```var results = list.Query()
+```csharp
+var results = list.Query()
     .When("Fund").IsEqualTo("Fellowships")
         .And.When("Title").Contains("Environmental")
     .WithViewContaining("Title")
         .And("Contract").Only
     .OrderByAscendingInternalName("Modified", true) // using internal name here
     .Finally
-        .GetResultsAsList();```
+        .GetResultsAsList();
+```
 
 ## FluentCreationExtensions.cs
 
